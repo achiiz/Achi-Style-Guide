@@ -114,3 +114,4 @@ slides2 : https://www.clarizen.com/project-management-marketing-terms-you-should
 slides3 : http://weheartit.com/larabcg/collections/98400363-colorful
 slides4 : https://www.nicedigitals.com/blog/
 backgound image: http://designwoop.com/2012/03/20-free-subtle-textures-for-backgrounds/
+*/
