@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>account</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="css-pages/enhanceJS.css">
+</head>
+
+<body>
+<header class="main-header" role="banner">
+	<h1 class="logo">Achi Style Guide</h1>
+	<nav class="menu">
+		<ul>
+		  <li class="menuBar"><a href="index.html" class="block">Home</a></li>
+		  <li class="menuBar"><a href="about.html" class="block">About</a></li>
+		  <li class="menuBar"><a href="Colour Palette.html" class="block">Colour Palette</a></li>
+		  <li class="menuBar"><a href="common style.html" class="block">Styles</a></li>
+		  <li class="menuBar"><a href="contact.html" class="block">Contact</a></li>
+		  <li class="menuBar"><a class="active" href="account.html">My Account</a></li>
+		</ul>
+	</nav>
+</header>
+	
+		<main>
+			<div class="background">
+				<div class="transbox">
+					<div class="transbox__text">
+				    Get in touch with us
+					 </div> 
+					 <div class="transbox__textSmall">
+					 	Sign Up or Log In to our website
+					 </div>
+			 
+		<!--     Sign up                 -------->
+<button onclick="document.getElementById('signup').style.display='block'">Sign Up</button>
+
+<!-- call for button -->
+<div id="signup" class="modal">
+  <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+  <div class="containerAccount">
+   <div class="mail">
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+</div>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input type="checkbox" checked="checked"> Remember me
+    
+    <div class="clearfix">
+      <button type="button"  class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</div>
+			 
+				
+			 
+<!--    		Log in	******		-->	    	
+<button onclick="document.getElementById('login').style.display='block'" class="mainlogin">Login</button>
+
+<div id="login" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    
+      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    <div class="containerAccount">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class="loginbtn">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="containerAccount" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancellogin">Cancel</button>
+<span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+					</div>
+	 	</div>
+			</div>
+		</main>
+		
+			<footer>Copyright &copy; Achiraya Thawin 2017</footer>
+		<script type="text/javascript" src="main.js"></script>	
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+</body>
+</html>

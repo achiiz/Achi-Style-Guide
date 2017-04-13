@@ -1,0 +1,286 @@
+
+
+/*------------------------------------------------------------------------------------------------------------------
+
+                                        		Sign In button
+
+----------------------------------------------------------------------------------------------------------------*/
+
+div.accountArea{
+	width: 570px;
+	padding-left: 100px;
+	float: left;
+	
+	
+}
+
+/* style input fields full-width*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Main style for the buttons */
+button {
+    background-color:#8BC34A;
+    color: white;
+    padding: 14px 20px;
+    margin: 40px 3px 70px 300px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+	clear: both;
+	display: inline-block;
+	font-size: 16px;
+	
+}
+
+.mainlogin{
+	float: right;
+	margin: 40px 300px 0px 0px;
+	display: inline-block;
+	
+}
+
+button:hover {
+    opacity: 0.8;
+	cursor: pointer;
+}
+.loginbtn{
+	width: 100%;
+	margin: 8px 0;
+	font-size: 16px;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+	margin: 8px 0;
+}
+.cancellogin {
+    width: 20%;
+    padding: 10px 10px;
+    background-color: #f44336;
+	float: inherit;
+	margin: 15px;
+	font-size: 14px;
+}
+
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+	margin: 8px 0;
+}
+
+.containerAccount {
+    padding: 16px;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+span.psw {
+    float: right;
+    padding: 20px;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*-----------------------------------------------------------------------------------------------
+							Slide Show
+--------------------------------------------------------------------------------------------------*/
+
+{box-sizing:border-box}
+
+body {font-family: Verdana,sans-serif;margin:0}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.mySlides {
+    display: block;
+	max-width: 1000px;
+	position: relative;
+	margin:auto;
+	
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #ffffff;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 100;
+	text-shadow: 1px 1px 2px #000000, 0 0 25px #212121, 0 0 20px black;
+	
+}
+
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active__dot, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*-------------------------------------------------------------------------------------
+									Email validation
+--------------------------------------------------------------------------------------*/
+li.scrmail {list-style-type: none;  
+font-size: 14pt; 
+	background-color: none;
+}  
+.mail__index {  
+margin: auto;  
+padding-top: 10px;  
+padding-bottom: 10px;  
+width: 500px;  
+
+border: 1px soild silver;  
+}  
+.mail__index h2{  
+color: white;
+	
+}  
+input {  
+font-size: 20pt;  
+}  
+input:focus, textarea:focus{  
+background-color: lightyellow;  
+}  
+input submit {  
+font-size: 5pt; 
+
+}  
+/*-------------------------------------------------------------------------------------
+									local storage
+--------------------------------------------------------------------------------------*/
+textarea {
+  	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size: 20pt;
+	height: 200px;
+}
+ 
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width : 375px ){
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+@media screen and (max-width :580px){
+	button{
+		margin: 10px 0px 20px 90px;
+	}
+	.mainlogin{
+		margin: 10px 90px 0px 0px ;
+	}
+}
+
